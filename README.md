@@ -3,7 +3,7 @@ A handson exercise folder for Angular. I hope to upskill and have great fun lear
 
 [Angular documentation](https://angular.io/)
 
-### [Common Angular commands] (https://angular.io/cli)
+### [Common Angular commands](https://angular.io/cli)
 1. Checking Angular Version
     -   `ng version`
     -   `ng v`
@@ -25,5 +25,4 @@ A handson exercise folder for Angular. I hope to upskill and have great fun lear
 ## Mini projects
 
 This section shows brief details of the tasks we perform to know more about angular in detail.
-
 
