@@ -1,7 +1,10 @@
 # cautious-couscous
 A handson exercise folder for Angular. I hope to upskill and have great fun learning about it.
 
-[Angular documentation](https://angular.io/)
+## Documentation References
+1. [Angular documentation](https://angular.io/)
+2. [File Structure](https://angular.io/guide/file-structure)
+
 
 ### [Common Angular commands](https://angular.io/cli)
 1. Checking Angular Version
