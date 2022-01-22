@@ -26,3 +26,8 @@ A handson exercise folder for Angular. I hope to upskill and have great fun lear
 
 This section shows brief details of the tasks we perform to know more about angular in detail.
 
+| Project  | Description |
+| ------------- |:-------------:|
+| 1. hellong      | Hello World     |
+
+That's all for now; chill ;)
