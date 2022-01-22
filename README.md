@@ -22,3 +22,8 @@ A handson exercise folder for Angular. I hope to upskill and have great fun lear
     -   `ng build`
     -   `ng b`
 
+## Mini projects
+
+This section shows brief details of the tasks we perform to know more about angular in detail.
+
+
