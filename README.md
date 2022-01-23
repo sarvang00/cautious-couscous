@@ -32,5 +32,6 @@ This section shows brief details of the tasks we perform to know more about angu
 | Project  | Description |
 | ------------- |:-------------:|
 | 1. hellong      | Hello World     |
+| 2. counter-app      | A counter for 1-10; with reset     |
 
 That's all for now; chill ;)
