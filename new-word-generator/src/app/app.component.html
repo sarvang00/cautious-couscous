@@ -12,12 +12,16 @@
     (change)="handleSlideChange($any($event.target).value)"
   />
 
-  <button class="btn btn-info" (click)="generate()">Generate Words</button>
+  <div class="row">
+    <button class="btn btn-info col-4" (click)="generate()">Generate Words</button>
+    <div class="col-4"></div>
+    <button class="btn btn-info col-4" (click)="getRandCountry()">Get a Country Name</button>
+  </div>
   
   <div *ngIf="words" class="card card-body">
     <p class="display-4">
       {{words}}
     </p>
-  </div>]
-  
+  </div>
+
 </div>
