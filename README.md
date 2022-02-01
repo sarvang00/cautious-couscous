@@ -35,6 +35,7 @@ This section shows brief details of the tasks we perform to know more about angu
 | 2. counter-app      | A counter for 0-10; with reset     |
 | 3. ncore-angular      | Nuke arch n' rebuild an app     |
 | 4. new-word-generator | Generate x words; randomly select from array |
+| 5. tic-tac-toe | My fav passtime game and I think it is easy :) |
 
 
 That's all for now; chill ;)
