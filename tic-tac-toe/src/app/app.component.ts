@@ -17,18 +17,19 @@ export class AppComponent {
 
   handleClick(itemNumber: number) {
 
+    if (this.itemArray[itemNumber] === 'empty') {
+      this.itemArray[itemNumber] = this.isCross? 'cross' : 'circle';
+      this.isCross = !this.isCross;
+    } else {
+      return this.toastr.info("Already filled");
+    }
+
+    this.checkIsWinner();
     if (this.winMessage) {
       return this.toastr.success(this.winMessage);
     }
     
-    if (this.itemArray[itemNumber] === 'empty') {
-      this.itemArray[itemNumber] = this.isCross? 'cross' : 'circle';
-      this.isCross = !this.isCross;
-      this.checkIsWinner();
-      return this.toastr.warning("");
-    } else {
-      return this.toastr.info("Already filled");
-    }
+    return "";
 
   }
 
