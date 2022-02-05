@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 import {faPen, faTimes} from "@fortawesome/free-solid-svg-icons"
 import {faCircle} from "@fortawesome/free-regular-svg-icons"
@@ -10,7 +10,7 @@ import {faCircle} from "@fortawesome/free-regular-svg-icons"
 })
 export class IconComponent implements OnInit {
 
-  // @Input()
+  @Input()
   iconName: string = "";
 
   faPen = faPen;
