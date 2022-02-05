@@ -15,6 +15,23 @@ export class AppComponent {
 
   constructor(private toastr: ToastrService) { }
 
+  handleClick(itemNumber: number) {
+
+    if (this.winMessage) {
+      return this.toastr.success(this.winMessage);
+    }
+    
+    if (this.itemArray[itemNumber] === 'empty') {
+      this.itemArray[itemNumber] = this.isCross? 'cross' : 'circle';
+      this.isCross = !this.isCross;
+      this.checkIsWinner();
+      return this.toastr.warning("");
+    } else {
+      return this.toastr.info("Already filled");
+    }
+
+  }
+
   checkIsWinner = () => {
     if (this.itemArray[0] == this.itemArray[1] &&
       this.itemArray[1] == this.itemArray[2] &&
