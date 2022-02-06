@@ -39,7 +39,7 @@ A handson exercise folder for Angular. I hope to upskill and have great fun lear
 - Observables are lazy Push collections of multiple values. Observables are like functions with zero arguments, but generalize those to allow multiple values.
 
 4. What is an Observer?
-- It "observes"/processes/reads/works on an observable.
+- It "observer"/processes/reads/works on an observable.
 
 ## Mini projects
 
