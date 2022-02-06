@@ -25,6 +25,22 @@ A handson exercise folder for Angular. I hope to upskill and have great fun lear
     -   `ng build`
     -   `ng b`
 
+### [RxJS](https://rxjs.dev/guide/overview)
+1. What problem is RxJS trying to solve?
+- Mainly, analogically, to handle ansync calls with multiple events.
+
+2. Why do we still need RxJS if we have promises?
+- Promises are when we don't want to wait. But when multiple events are to be handled at same time, RxJS is a bit easier to implement.
+
+3. What is a pipe?
+- A pipe in RxJS, like any other "pipe" sends data from one place to another. However, in our RxJS pipe, we can perform basic manipulation of data. We can process pipes before we even subscribe.
+
+3. What is an Observable?
+- Observables are lazy Push collections of multiple values. Observables are like functions with zero arguments, but generalize those to allow multiple values.
+
+4. What is an Observer?
+- It "observes"/processes/reads/works on an observable.
+
 ## Mini projects
 
 This section shows brief details of the tasks we perform to know more about angular in detail.
