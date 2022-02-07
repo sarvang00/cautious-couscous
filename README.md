@@ -33,7 +33,10 @@ A handson exercise folder for Angular. I hope to upskill and have great fun lear
 - Promises are when we don't want to wait. But when multiple events are to be handled at same time, RxJS is a bit easier to implement.
 
 3. What is a pipe?
-- A pipe in RxJS, like any other "pipe" sends data from one place to another. However, in our RxJS pipe, we can perform basic manipulation of data. We can process pipes before we even subscribe.
+- A pipe in RxJS (you need to import it), like any other "pipe" sends data from one place to another. However, in our RxJS pipe, we can perform basic manipulation of data. We can process pipes before we even subscribe.
+
+4. How is it different from Angular Pipe?
+- You don't need to explicitly mention angular pipes or import them. Just use the | symbol. Also, there are some implementation differences.
 
 3. What is an Observable?
 - Observables are lazy Push collections of multiple values. Observables are like functions with zero arguments, but generalize those to allow multiple values.
