@@ -52,6 +52,7 @@ This section shows brief details of the tasks we perform to know more about angu
 | 3. ncore-angular      | Nuke arch n' rebuild an app     |
 | 4. new-word-generator | Generate x words; randomly select from array |
 | 5. tic-tac-toe | My fav passtime game and I think it is easy :) |
+| 6. todo-app | A todo app to monitor tasks |
 
 
 That's all for now; chill ;)
