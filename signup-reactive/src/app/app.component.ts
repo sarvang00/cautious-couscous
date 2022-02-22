@@ -21,13 +21,17 @@ export class AppComponent implements OnInit {
     this.registerForm = this.formBuilder.group({
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
-      email: ['', Validators.required, Validators.email],
+      email: ['', [Validators.required, Validators.email]],
       password: ['', Validators.required],
       confirmPassword: ['', Validators.required],
       acceptTandC: [false, Validators.requiredTrue]
     }, {
       validators: PasswordChecker('password', 'confirmPassword')
     })
+  }
+
+  get registerFormControls() {
+    return this.registerForm.controls;
   }
 
   onSubmit() {
