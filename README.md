@@ -56,6 +56,7 @@ This section shows brief details of the tasks we perform to know more about angu
 | 4. new-word-generator | Generate x words; randomly select from array |
 | 5. tic-tac-toe | My fav passtime game and I think it is easy :) |
 | 6. todo-app | A todo app to monitor tasks |
+| 7. signup-reactive | A reactive form for signup operations |
 
 
 That's all for now; chill ;)
