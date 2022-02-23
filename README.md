@@ -57,6 +57,7 @@ This section shows brief details of the tasks we perform to know more about angu
 | 5. tic-tac-toe | My fav passtime game and I think it is easy :) |
 | 6. todo-app | A todo app to monitor tasks |
 | 7. signup-reactive | A reactive form for signup operations |
+| 8. random-card | A page to display contact info using APIs |
 
 
 That's all for now; chill ;)
