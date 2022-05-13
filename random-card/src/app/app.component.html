@@ -4,6 +4,8 @@
             <div class="text-center">
                 <app-card [user]="user" *ngIf="user; else loadingBlock"></app-card>
 
+                <button (click)="get_other_user()">Get other user</button>
+
                 <ng-template #loadingBlock>
                     <div class="text-center mt-5">
                         <div class="spinner-border spinner-grow-mg text-white" role="status"></div>
