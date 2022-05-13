@@ -23,4 +23,8 @@ export class AppComponent implements OnInit {
         this.user = user.results[0];
       })
   }
+
+  get_other_user(): void {
+    this.ngOnInit();
+  }
 }

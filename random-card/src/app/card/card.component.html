@@ -5,9 +5,7 @@
         [src]="user.picture?.large" alt="">
         <div class="card-title text-primary">
             <h1>
-                <span class="px-2">{{user.name?.title}}. </span>
-                <span class="px-2">{{user.name?.first}} </span>
-                <span class="px-2">{{user.name?.last}}</span>
+                <span class="px-2">{{user.name?.title}}. {{user.name?.first}} {{user.name?.last}}</span>
             </h1>
         </div>
         <div class="card-text">
@@ -16,7 +14,15 @@
         </div>
         <div class="card-text">
             <fa-icon [icon]="faMapMarkedAlt"></fa-icon>
-            {{user.location?.street?.number}}, {{user.location?.city}}, {{user.location?.state}}, {{user.location?.country}}
+            {{user.location?.city}}, {{user.location?.state}}, {{user.location?.country}} {{user.location?.postcode}}
+        </div>
+        <div class="card-text">
+            <fa-icon [icon]="faPhone"></fa-icon>
+            {{user.phone}}
+        </div>
+        <div class="card-text">
+            <fa-icon [icon]="faDatabase"></fa-icon>
+            Registered on {{user.registered?.date| date:'LLL d, Y'}}
         </div>
     </div>
 </div>
