@@ -9,13 +9,15 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { ReposComponent } from './components/repos/repos.component';
+import { UserCardComponent } from './components/user-card/user-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ReposComponent
+    ReposComponent,
+    UserCardComponent
   ],
   imports: [
     BrowserModule,
