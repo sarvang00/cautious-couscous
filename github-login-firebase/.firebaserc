@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "github-login-firebase-a2e88": {
+      "hosting": {
+        "github-login-firebase": [
+          "github-login-firebase-a2e88"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "github-login-firebase-a2e88"
+  }
+}
