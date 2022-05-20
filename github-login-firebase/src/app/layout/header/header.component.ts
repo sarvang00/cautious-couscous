@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from 'src/app/services/auth.service';
+import { AuthService } from './../../services/auth.service';
 import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  email: string = '';
+  email = null;
 
   constructor(
     private auth: AuthService,
@@ -17,22 +17,20 @@ export class HeaderComponent implements OnInit {
     private toastr: ToastrService
   ) {
     auth.getUser().subscribe((user) => {
-      this.email = user?.email!;
-    })
+      this.email = user?.email;
+    });
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   async handleSignOut() {
     try {
       const res = await this.auth.signOut();
       this.router.navigateByUrl('/signin');
-      this.toastr.info("Login to use the service")
-      this.email = '';
+      this.toastr.info('Login Again to continue');
+      this.email = null;
     } catch (error) {
-      this.toastr.error("Something is wrong")
+      this.toastr.error('Somthing is wrong');
     }
   }
-
 }
