@@ -9,14 +9,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  email = null;
+  email = '';
 
   constructor(
     private auth: AuthService,
     private router: Router,
     private toastr: ToastrService
   ) {
-    auth.getUser().subscribe((user) => {
+    auth.getUser().subscribe((user: any) => {
       this.email = user?.email;
     });
   }
@@ -28,7 +28,7 @@ export class HeaderComponent implements OnInit {
       const res = await this.auth.signOut();
       this.router.navigateByUrl('/signin');
       this.toastr.info('Login Again to continue');
-      this.email = null;
+      this.email = '';
     } catch (error) {
       this.toastr.error('Somthing is wrong');
     }
