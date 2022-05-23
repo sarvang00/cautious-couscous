@@ -13,7 +13,7 @@ export const environment = {
     authDomain: 'social-media-74b4e.firebaseapp.com',
     messagingSenderId: '258215262656',
   },
-  production: false
+  production: true
 };
 
 /*
