@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "social-media-74b4e": {
+      "hosting": {
+        "travelgram": [
+          "social-media-74b4e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "social-media-74b4e"
+  }
+}
