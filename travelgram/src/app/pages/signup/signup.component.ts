@@ -11,6 +11,7 @@ import { AngularFireDatabase } from "@angular/fire/compat/database";
 
 // using something for image compression
 import { NgxImageCompressService } from "ngx-image-compress";
+import { imageConfig } from 'src/utils/config';
 
 @Component({
   selector: 'app-signup',
@@ -19,13 +20,15 @@ import { NgxImageCompressService } from "ngx-image-compress";
 })
 export class SignupComponent implements OnInit {
   picture: string = "https://learnyst.s3.amazonaws.com/assets/schools/2410/resources/images/logo_lco_t17sd.png"
+  compressed_picture: string = ""
 
   constructor(
     private auth: AuthService,
     private router: Router,
     private db: AngularFireDatabase,
     private storage: AngularFireStorage,
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    private imageprocessor: NgxImageCompressService
   ) { }
 
   ngOnInit(): void {
@@ -58,5 +61,5 @@ export class SignupComponent implements OnInit {
       console.log(err)
     })
   }
-
+  
 }
