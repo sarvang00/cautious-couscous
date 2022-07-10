@@ -60,4 +60,4 @@ This section shows brief details of the tasks we perform to know more about angu
 | 8. random-card | A page to display contact info using APIs |
 
 
-That's all for now; chill ;)
+**Note: Travelgram app was not completed like other components have been. Considering no further work can be done here, I am archiving this repo.**
